@@ -1,0 +1,17 @@
+class Warehouse,       line 9,       poor naming,            in this line "id=i;", the i will not understand which id it has to take. There's no "this" keyword written.
+class inventorySystem, line 6-198,   god class,             the class is too large to deal with
+class inventorySystem, line 8,       dead code,              this reports list has never been used
+class inventorySystem, line 43-66,   conditional complexity, too many nested if-else
+class inventorySystem, line 10-20,   primitive obsession,    too many primitive attributes
+class inventorySystem, line 32-36,   nested class,           class order item inside order inside inventorySystem class
+class inventorySystem, line 41-71,   long method,            method addProduct is too long and complicated
+class inventorySystem, line 48,      tight coupling,          creating product object inside addproduct method
+class inventorySystem, line 79-92,   magic numbers,          some integer and floating numbers without initializing
+class inventorySystem, line 76-98,   switch-case,            too many conditonal dealings
+class inventorySystem, line 76-98,   switch-case,            too many conditonal dealings
+class inventorySystem, line 103-109, dead code,              method calculateTotalInventoryValue has never been used
+class inventorySystem, line 111-118, dead code,              method calculateWarehouseValue has never been used
+class inventorySystem, line 121-128, dead code,              method calculateCategoryValue has never been used
+class inventorySystem, line 131-166, long method,            method proccessOrder is too long and complicated
+class inventorySystem, line 169-196, duplicated code,        method GenerateInventoryReport and GenerateSalesReport has duplicate code patterns
+class globalInventoryData, line 142-153, conditional complexity, if-else
