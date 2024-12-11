@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "*://*.foodpanda.com/*",
+            "resourceTypes": ["main_frame", "sub_frame"]
+        }
+    }
+]
