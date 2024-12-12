@@ -14,7 +14,7 @@ public class Dashboard {
             switch (choice) {
                 case 1:
                     Login login = new Login();
-                    login.login(null, null);
+                    login.login("src\\File\\registeree.txt");
                     break;
 
                 case 2:    
