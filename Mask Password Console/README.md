@@ -15,7 +15,7 @@ A small project that allows users to securely input and mask their password usin
 1. **Clone the repository** (or create the `MaskPassword.java` file in your working directory).
     ```bash
     git clone https://github.com/ridika-2004/my-development-tools
-    cd <repository-folder>
+    cd Mask Password Console
     ```
 
 2. **Compile the Java program**:
