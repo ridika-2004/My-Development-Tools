@@ -3,7 +3,7 @@
 A small project that allows users to securely input and mask their password using Java. The entered password is saved to a file without displaying it in the console.
 
 ## Features
-- Password input is masked with `*` or hidden during typing (depending on implementation).
+- Password input is hidden during typing.
 - Securely saves the password to a file.
 - Lightweight and beginner-friendly.
 
