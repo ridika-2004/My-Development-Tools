@@ -9,7 +9,8 @@ public class Dashboard {
         int choice;
         do{
             System.out.println("1. Login");
-            System.out.println("2. Exit");
+            System.out.println("2. Register");
+            System.out.println("3. Exit");
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -17,7 +18,12 @@ public class Dashboard {
                     login.login("src\\File\\registeree.txt");
                     break;
 
-                case 2:    
+                case 2:
+                    Register register = new Register();
+                    register.register("src\\File\\registeree.txt");
+                    break;    
+
+                case 3:    
                     System.out.println("Goodbye........");
         
                 default:
@@ -25,7 +31,7 @@ public class Dashboard {
             }
 
         } 
-        while (choice!=2);
+        while (choice!=3);
             scanner.close();
     }
 }

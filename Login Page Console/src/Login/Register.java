@@ -2,34 +2,36 @@ package Login;
 
 import java.io.Console;
 import java.io.FileWriter;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Register {
-    private String username;
-    private String email;
-    private String password;
     private static final Scanner scanner = new Scanner(System.in);
 
     public void register(String fileString){
         while (true) {
 
+            Console console = System.console();
+            if (console == null) {
+                System.out.println("No console available. Please run this program in a terminal or command prompt.");
+                return;
+            }
+            
             System.out.print("Enter your Username: ");
-            username = scanner.nextLine().trim();
+            String username = scanner.nextLine().trim();
             System.out.print("Enter your Email: ");
-            email = scanner.nextLine().trim();
+            String email = scanner.nextLine().trim();
             System.out.print("Enter your Password: ");
-            password = scanner.nextLine().trim();
+            char[] passwordArray = console.readPassword();
+            String password = new String(passwordArray);
 
             if(Validator.validator(username,fileString) && Validator.validator(email,fileString)){
+                saveDetails(username+","+email+","+HashPassword.hashPassword(password), fileString);
                 break;
             }
             else{
                 System.out.println("This username or email already exists. Please try a unique one");
             }
         }
-
-        saveDetails(username+email+HashPassword.hashPassword(password), fileString);
     }
 
     private void saveDetails(String details, String fileString){
