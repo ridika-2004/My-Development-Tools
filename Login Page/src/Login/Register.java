@@ -1,6 +1,8 @@
 package Login;
 
+import java.io.Console;
 import java.io.FileWriter;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Register {
@@ -23,17 +25,18 @@ public class Register {
                 break;
             }
             else{
-                System.out.println("This username or password already exists. Please try a unique one");
+                System.out.println("This username or email already exists. Please try a unique one");
             }
         }
 
-        saveDetails(username+email+password, fileString);
+        saveDetails(username+email+HashPassword.hashPassword(password), fileString);
     }
 
     private void saveDetails(String details, String fileString){
         try{
-            FileWriter fileWriter = new FileWriter(fileString);
+            FileWriter fileWriter = new FileWriter(fileString,true);
             fileWriter.append(details+"\n");
+            fileWriter.close();
         }
         catch(Exception e){
             e.printStackTrace();

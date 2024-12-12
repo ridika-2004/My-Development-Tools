@@ -1,6 +1,4 @@
 package Login;
-
-import java.io.FileWriter;
 import java.util.Scanner;
 
 public class Login {
@@ -19,14 +17,15 @@ public class Login {
             System.out.print("Enter your Password: ");
             password = scanner.nextLine().trim();
 
-            if(!Validator.validator(username,registerfileString) && !Validator.validator(email,registerfileString)){
+            if(LoginMatcher.LoginMatched(username, email, password, registerfileString)){
+                System.out.println("You logged in");
                 break;
             }
             else{
                 System.out.println("This username or password doesn't exists. Please register before you login");
+                Register register = new Register();
+                register.register("src\\File\\registeree.txt");
             }
         }
-
-        System.out.println("You logged in");
     }
 }
