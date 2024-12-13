@@ -20,9 +20,9 @@ This is a small project to test JavaScript functionality in VS Code. It includes
 ## Screenshot
 Below is how it looks when you click the button:
 
-\`\`\`
-JavaScript is working!
-\`\`\`
+<p align="center">
+<img src="https://github.com/user-attachments/assets/bf266e5c-3b26-4c68-ba52-61ece285d811"alt="JavaScript Test" width="250">
+</p>
 
 ## License
-This project is free to use and modify.
+This Code is free to use and modify.
