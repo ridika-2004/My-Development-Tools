@@ -1,6 +1,6 @@
 ## Ride Fare Calculator
 
-This is a **Ride Fare Calculator** for a ride-sharing application written in **Bash**. The program calculates the fare for both **Economy** and **Premium** rides based on the distance traveled, time spent, and any applicable surcharges or discounts.
+This program calculates the fare for both **Economy** and **Premium** rides based on the distance traveled, time spent, and any applicable surcharges or discounts.
 
 ## Key Features:
 - **Economy Ride**:
