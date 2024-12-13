@@ -1,4 +1,4 @@
-echo "# JavaScript Test Project
+# First JavaScript Test
 
 This is a small project to test JavaScript functionality in VS Code. It includes a simple HTML, CSS, and JavaScript setup that displays a message when a button is clicked.
 
@@ -26,4 +26,3 @@ JavaScript is working!
 
 ## License
 This project is free to use and modify.
-" > README.md
