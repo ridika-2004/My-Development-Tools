@@ -1,0 +1,5 @@
+Sprinkles,0.30
+Marshmallow,0.70
+Crushed Oreo,0.85
+Fresh Strawberries,1.00
+Chocolate Chips,0.50
