@@ -35,9 +35,12 @@ This project doesn't require any external libraries or complicated setup. All yo
 1. Clone the repository:
    ```bash
    git clone https://github.com/ridika-2004/my-development-tools.git
+   
+2. Naviage to the folder
+   ```bash
    cd XOR Encryption-Decryption
    
-2. Open the `index.html` file in your browser, and you're good to go!
+3. Open the `index.html` file in your browser, and you're good to go!
 
 ## Example
 - Input the text **"Hello World"** and a key, say **"key"**.
