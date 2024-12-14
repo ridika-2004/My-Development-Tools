@@ -41,12 +41,15 @@ This repository contains a collection of various small projects that I've built 
   A system to manage product inventory, including adding, removing, and updating items.
 
 [**Ride Fair Calculator Console**  ](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Ride%20Fair%20Calculator%20-%20Console%20Java)
+
   A simple calculator to determine fair pricing for ride services.
 
-[**Shape Ordered Printer**]
+[**Shape Ordered Printer**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Shape%20Ordered%20Printer%20-%20Console%20Java)
+
   A program that prints shapes in a specified order based on user input.
 
-[**TextToSpeechGui**]
+[**TextToSpeechGui**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Text%20To%20Speech%20GUI%20-%20JavaFX)
+
   A graphical user interface for text-to-speech functionality, built with JavaFX.
 
 [**User Management System**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/User%20Management%20System%20-%20Console%20Java)
@@ -54,6 +57,7 @@ This repository contains a collection of various small projects that I've built 
   A user management system with the ability to register, login, and manage user data.
 
 [**XOR Encryption-Decryption**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/XOR%20Encryption%20Decryption%20-%20Web)
+
   A program for basic encryption and decryption using the XOR algorithm.
 
 [**Library Management System**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Library%20Management%20System%20-%20Console%20Java)
