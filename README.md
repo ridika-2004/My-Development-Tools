@@ -51,7 +51,6 @@ This repository contains a collection of various small projects that I've built 
 - Java
 - JavaScript
 - HTML & CSS
-- Python
 - Bash
 - Various frameworks and libraries for GUI applications
 
