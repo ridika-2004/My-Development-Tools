@@ -34,7 +34,8 @@ This project doesn't require any external libraries or complicated setup. All yo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/xor-encryption.git
+   git clone https://github.com/ridika-2004/my-development-tools.git
+   cd XOR Encryption-Decryption
    
 2. Open the `index.html` file in your browser, and you're good to go!
 
