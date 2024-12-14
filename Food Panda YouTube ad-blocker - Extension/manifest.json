@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Food Panda YouTube Ad-Blocker",
+    "version": "1.0",
+    "description": "Blocks YouTube ads related to Foodpanda for a cleaner viewing experience.",
+    "permissions": [
+        "declarativeNetRequest",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.youtube.com/*",
+        "*://*.foodpanda.com/*"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "block-foodpanda-ads",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "icons": {
+        "16": "icons/logo_16x16.png",
+        "48": "icons/logo_48x48.png",
+        "128": "icons/logo_128x128.png"
+    }
+}
