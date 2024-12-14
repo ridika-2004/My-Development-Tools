@@ -4,7 +4,7 @@ This repository contains a collection of various small projects that I've built 
 
 ## Projects List
 
-- **BMI Calculator**  
+[**BMI Calculator**](https://github.com/ridika-2004/my-development-tools/tree/9ec1f1e8e3748b406e555062bf11f2d069bbeb36/BMI%20Calculator%20-%20Web)  
   A simple console application that calculates Body Mass Index based on user input.
 
 - **Bank Transaction Analyzer**  
