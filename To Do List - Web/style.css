@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f4f4, #f9e1bc);
+    padding: 8px;
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: transparent;
+    margin: 40px auto 20px;
+    padding: 20px 150px 10px;
+}
+
+.to-do-app h2{
+    color: #4d300b;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.to-do-app h2 img{
+    width: 45px;
+    margin-left: 10px;
+    /* add a tub */
+}
