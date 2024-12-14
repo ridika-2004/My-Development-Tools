@@ -1,0 +1,4 @@
+Mint Chocolate Chip,2.80
+Chocolate Fudge,3.00
+Strawberry Swirl,2.75
+Pistachio Delight,3.25
