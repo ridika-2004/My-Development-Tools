@@ -44,6 +44,10 @@ This repository contains a collection of various small projects that I've built 
 
   A simple calculator to determine fair pricing for ride services.
 
+## [**Google Logo - HTML, CSS**](https://github.com/ridika-2004/my-development-tools/tree/d03fb172db8b226402e29e190264e6bb54afbb30/Google%20Logo%20-%20Web)
+
+  A Big 'G' logo made with html and css.
+
 ## [**Shape Ordered Printer**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Shape%20Ordered%20Printer%20-%20Console%20Java)
 
   A program that prints shapes in a specified order based on user input.
