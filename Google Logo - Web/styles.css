@@ -1,0 +1,33 @@
+#google-logo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    margin: auto;
+    border-top: 100px solid #EA4335;
+    border-left: 100px solid #FBCC05;
+    border-bottom: 100px solid #34A853;
+    border-right: 100px solid #4285F4;
+    border-radius: 50%;
+}
+
+#google-logo::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 30%;
+    right: -90px;
+    width: 245px;
+    height: 100px;
+    background-color: #4285F4;
+}
+
+#google-logo::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    border-top: 200px solid transparent;
+    border-right: 200px solid #ffffff;
+    top: -125px;
+    right: -100px;
+}
