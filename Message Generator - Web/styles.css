@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    background-image: url('image/Kitty.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px;
+}
+
+.message-box{
+    background: transparent;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    align-items: center;
+    top: 70%;
+    right: 50%;
+    left: 40%;
+}
