@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Grade Management System
 
 This is a **Java-based application** for managing grades of students across multiple courses. It calculates the **total marks**, determines the **percentage**, and assigns a **grade** based on the given criteria.
@@ -30,3 +29,16 @@ This is a **Java-based application** for managing grades of students across mult
 1. Compile the program:
    ```bash
    javac Grade.java
+
+2. Run the program:
+   ```bash
+   java Main
+3. Follow the prompts to enter marks for each course.
+4. View the total marks, percentage, and grade summary.
+
+## Example Output
+
+![Screenshot](https://github.com/user-attachments/assets/a35c6985-5a71-4ced-8d68-ca0cd5eb484c)
+
+## License
+This project for personal use.
