@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h4 {
+    color: white;
+    font-size: 24px;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-right: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #f1f5f8;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.color {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #f15025;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #e64c19;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #cc4300;
+}
+
+@media (max-width: 768px) {
+    nav h4 {
+        font-size: 20px;
+    }
+
+    nav .nav-links li {
+        margin-right: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .color {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
