@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -25,7 +26,7 @@ public class LoginForm extends JFrame{
     JTextField tfEmaField;
     JPasswordField pfPassword;
 
-    public void initializa(){
+    public void initialize(){
         //Login Panel
         JLabel jLoginForm = new JLabel("Login Form", SwingConstants.CENTER);
         jLoginForm.setFont(mainFont);
@@ -44,6 +45,8 @@ public class LoginForm extends JFrame{
 
         JPanel formPanel = new JPanel();
         formPanel.setLayout(new GridLayout(0,1,10,10));
+
+        formPanel.setBorder(BorderFactory.createEmptyBorder(30, 50, 30, 50));
 
         formPanel.add(labelPassword);
         formPanel.add(jEmail);
@@ -76,8 +79,27 @@ public class LoginForm extends JFrame{
             
         });
 
+        JButton cancelButton = new JButton("Cancel");
+        cancelButton.setFont(mainFont);
+
+        cancelButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+            
+        });
+
+        JPanel buttoPanel = new JPanel();
+        buttoPanel.setLayout(new GridLayout(1,2,10,0));
+        buttoPanel.add(logiButton);
+        buttoPanel.add(cancelButton);
+
+        buttoPanel.setBorder(BorderFactory.createEmptyBorder(30, 50, 30, 50));
+
         //initialize the frame
         add(formPanel, BorderLayout.NORTH);
+        add(buttoPanel, BorderLayout.SOUTH);
 
 
         setTitle("Login Form");
@@ -91,13 +113,13 @@ public class LoginForm extends JFrame{
     private User getAuthenticatedUser(String email, String password){
         User user = null;
 
-        final String db_url = "jdbc:mysql://localhost:3306/login_form";
+        final String db_url = "jdbc:mysql://localhost:3306/login_form?serverTimezone=UTC";
         final String username = "root";
         final String db_password = "Ridnin990";
 
         try {
             Connection conn = DriverManager.getConnection(db_url, username, db_password);
-            String sql = "selet * from users where email=? and password=?";
+            String sql = "select * from users where email=? and password=?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, password);
@@ -118,7 +140,9 @@ public class LoginForm extends JFrame{
             conn.close();
 
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println("Database connection failed");
         }
+
+        return user;
     }
 }
