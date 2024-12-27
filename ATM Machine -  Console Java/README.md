@@ -25,3 +25,24 @@ This is a simple ATM simulation program written in Java. The program allows user
 2. Navigate to the project folder and compile the Java files:
    ```bash
    javac Main.java ATM.java
+3. Run the program with the following command :
+   java Main
+
+## Sample Interaction
+```
+Enter your pin: 5674
+Enter your choice
+1.Check balance
+2.Withdraw money
+3.Deposit money
+4.Exit
+```
+
+## Menu Options
+- Check balance
+- Withdraw money
+- Deposit money
+- Exit the program
+
+## License
+This project is for personal use.
