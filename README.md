@@ -1,9 +1,19 @@
-# My Development Tools
+# 💻 My Development Tools
+---
 
-This repository contains a collection of various small projects that I've built to practice and demonstrate my development skills in different programming languages. Below you'll find a list of the projects, along with brief descriptions.
+<p align="center">  
+  <img src="https://img.shields.io/badge/Languages-Java%20%7C%20C%2B%2B-blue" alt="Languages">  
+  <img src="https://img.shields.io/badge/Projects-10%2B-brightgreen" alt="Projects">  
+  <img src="https://img.shields.io/badge/Status-Active-success" alt="Status">  
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-%23ff69b4" alt="Open Source">  
+</p>
+
+
+Welcome to my repository of **development tools and small projects**! This collection showcases my **programming skills**, **problem-solving abilities**, and experimentation with various **languages** and **technologies**. Below, you'll find a list of projects, along with a folder link of each.
+
 
 ## Projects List
-
+---
 ## **[BMI Calculator](https://github.com/ridika-2004/my-development-tools/tree/9ec1f1e8e3748b406e555062bf11f2d069bbeb36/BMI%20Calculator%20-%20Web)**  
 
   A simple console application that calculates Body Mass Index based on user input.
