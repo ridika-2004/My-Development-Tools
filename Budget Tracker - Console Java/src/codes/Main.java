@@ -6,5 +6,6 @@ public class Main {
         Budget budget = new Budget(budgetFile);
         //budget.setCatagoryandLimit();
         budget.viewTotalSpending();
+        budget.updateSpending();
     }
 }
