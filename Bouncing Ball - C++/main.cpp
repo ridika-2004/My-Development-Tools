@@ -4,25 +4,30 @@ using namespace std;
 
 class Ball{
     public:
-    int x,y,velocity;
+    float x,y,velocity;
     float size;
 };
 
 class Platform{
     public:
-    int x,y,width,height;
+    float x,y,width,height;
 };
-int ball_on_platform(Ball ball,Platform platforms[]){
-    int count = 3;
+int ball_on_platform(Ball ball,Platform platforms[], int count){
     for(int i=0;i<count;i++){
-        Vector2 ball_position = {.x = ball.x, .y=ball.y};
-        Rectangle platform_rec = {.x = platforms[i].x, .y = platforms[i].y,
-        .width = platforms[i].width, .height = platforms[i].height};
-        if(CheckCollisionCircleRec(ball_position, ball.size, platform_rec)){
-            return 1;
+        Rectangle platform_rec = {.x = platforms[i].x, 
+                                  .y = platforms[i].y,
+                                  .width = platforms[i].width, 
+                                  .height = platforms[i].height};
+        Rectangle ball_rec = {.x = ball.x-ball.size + 10, 
+                                   .y=ball.y+ball.size/2,
+                                   .width = ball.size*2 -20,
+                                   .height = ball.size/2+1,  
+                                   };
+        if(CheckCollisionRecs(ball_rec, platform_rec)){
+            return i;
         }
     }
-    return 0;
+    return -1;
 }
 
 int main(){
@@ -46,16 +51,22 @@ int main(){
     platforms[2].width = abs(window_width*0.3);
     platforms[2].height = abs(window_height*0.05);
 
+    int platform_count = sizeof(platforms)/sizeof(Platform);
+
     SetTargetFPS(60);
     InitWindow(window_width,window_height,"Bouncing Ball");
 
     while(!WindowShouldClose()){
         BeginDrawing();
 
-        if(ball_on_platform(ball,platforms)){
-            ball.velocity=0;
-            //ball.y = window_height - ball.size;
+        int current_platform = ball_on_platform(ball,platforms,platform_count);
 
+        if(current_platform!=-1){
+            if(ball.velocity>0){
+                ball.y = platforms[current_platform].y - ball.size;
+                ball.velocity=0;
+            }
+            
             if(IsKeyPressed(KEY_SPACE)){
                 ball.velocity = -30;
             }
@@ -71,8 +82,7 @@ int main(){
 
         ClearBackground(RAYWHITE);
 
-        int count = sizeof(platforms)/sizeof(Platform);
-        for(int i=0;i<count;i++){
+        for(int i=0;i<platform_count;i++){
             DrawRectangle(
                 platforms[i].x,
                 platforms[i].y,
