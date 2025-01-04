@@ -3,7 +3,7 @@
 
 <p align="center">  
   <img src="https://img.shields.io/badge/Languages-Java%20%7C%20C%2B%2B-blue" alt="Languages">  
-  <img src="https://img.shields.io/badge/Projects-10%2B-brightgreen" alt="Projects">  
+  <img src="https://img.shields.io/badge/Projects-20%2B-brightgreen" alt="Projects">  
   <img src="https://img.shields.io/badge/Status-Active-success" alt="Status">  
   <img src="https://img.shields.io/badge/Open%20Source-Yes-%23ff69b4" alt="Open Source">  
 </p>
