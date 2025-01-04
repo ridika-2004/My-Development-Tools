@@ -1,0 +1,15 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#mybtn{
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 5px 25px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.mylabels{
+    font-size: 3em;
+}
