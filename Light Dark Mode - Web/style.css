@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin-top: 200px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label {
+    font-size: 1.2em;
+    cursor: pointer;
+}
