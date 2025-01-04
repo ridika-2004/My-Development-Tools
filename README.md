@@ -84,6 +84,7 @@ Welcome to my repository of **development tools and small projects**! This colle
 ## Technologies Used
 
 - Java
+- C++
 - JavaScript
 - HTML & CSS
 - Bash
