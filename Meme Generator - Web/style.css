@@ -1,0 +1,29 @@
+.meme-generator{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.meme-generator img
+{
+    height: 400px;
+    object-fit: cover;
+}
+
+.meme-generator .generate-meme-btn {
+    padding: 8px 20px;
+    border: none;
+    box-shadow: 5px 5px 5px 1px #695959;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.meme-generator .generate-meme-btn:hover{
+    background-color: rgb(170, 170, 181);
+}
+
+.meme-generator .meme-author{
+    margin: 5px;
+}
