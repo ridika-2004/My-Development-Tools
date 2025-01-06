@@ -18,6 +18,11 @@ Welcome to my repository of **development tools and small projects**! This colle
 
 ## Projects List
 ---
+
+## **[ATM Machine - Console Java](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/ATM%20Machine%20-%20%20Console%20Java)**
+
+  This is a simple ATM simulation program written in Java.
+
 ## **[BMI Calculator](https://github.com/ridika-2004/my-development-tools/tree/9ec1f1e8e3748b406e555062bf11f2d069bbeb36/BMI%20Calculator%20-%20Web)**  
 
   A simple console application that calculates Body Mass Index based on user input.
@@ -26,7 +31,23 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   A program designed to analyze bank transactions and provide insights.
 
-## [**First JavaScript Test**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/First%20JavaScript%20Test%20-%20Web)  
+## **[Bouncing Ball - C++](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/Bouncing%20Ball%20-%20C%2B%2B)**
+
+  A C++ game made with raylib library.
+
+## **[Budget Tracker - Console Java](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/Budget%20Tracker%20-%20Console%20Java)**
+
+  A console simple budget tracking system with java.
+
+## **[Color Flipper - Web](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/Color%20Flipper%20-%20Web)**
+
+  A simple color flipper web development project.
+
+## **[Counter Program - Web](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/Counter%20Program%20-%20Web)**
+
+  A simple counter program for learning javascript.
+
+## [**First JavaScript Test - Web**](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/First%20JavaScript%20Test%20-%20Web)  
 
   My first test project using JavaScript, involving basic DOM manipulation and interactivity.
 
@@ -34,9 +55,25 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   A script that blocks ads of Food Panda while watching YouTube videos.
 
+## [**Google Logo - HTML, CSS**](https://github.com/ridika-2004/my-development-tools/tree/d03fb172db8b226402e29e190264e6bb54afbb30/Google%20Logo%20-%20Web)
+
+  A Big 'G' logo made with html and css.
+
 ## [**Ice Cream Shop Console**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Ice-Cream%20Shop%20-%20Console%20Java)
 
   A simple console application for managing sales and orders in an ice cream shop.
+
+## **[JavaScript Button Test - Web](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/JavaScript%20Button%20Test%20-%20Web)**
+
+  This is a small project to test JavaScript functionality in VS Code.
+
+## [**Library Management System**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Library%20Management%20System%20-%20Console%20Java)
+  
+  A system to manage books in a library, including features to add, remove, and search books.
+
+## **[Light Dark Mode - Web](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/Light%20Dark%20Mode%20-%20Web)**
+
+  This is a small project to learn JavaScript with toggling light/dark mode.  
 
 ## [**Login Page Console**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Login%20Page%20-%20Console%20Java)
 
@@ -58,10 +95,6 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   A simple calculator to determine fair pricing for ride services.
 
-## [**Google Logo - HTML, CSS**](https://github.com/ridika-2004/my-development-tools/tree/d03fb172db8b226402e29e190264e6bb54afbb30/Google%20Logo%20-%20Web)
-
-  A Big 'G' logo made with html and css.
-
 ## [**Shape Ordered Printer**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Shape%20Ordered%20Printer%20-%20Console%20Java)
 
   A program that prints shapes in a specified order based on user input.
@@ -78,9 +111,6 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   A program for basic encryption and decryption using the XOR algorithm.
 
-## [**Library Management System**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Library%20Management%20System%20-%20Console%20Java)
-  
-  A system to manage books in a library, including features to add, remove, and search books.
 
 ## [**To Do List-Web**](https://github.com/ridika-2004/my-development-tools/tree/0c9c09017f5418878e901dfadf10eb33b9b25ae5/To%20Do%20List%20-%20Web)
 
