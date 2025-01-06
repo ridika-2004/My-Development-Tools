@@ -23,11 +23,11 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   This is a simple ATM simulation program written in Java.
 
-## **[BMI Calculator](https://github.com/ridika-2004/my-development-tools/tree/9ec1f1e8e3748b406e555062bf11f2d069bbeb36/BMI%20Calculator%20-%20Web)**  
+## **[BMI Calculator - Web](https://github.com/ridika-2004/my-development-tools/tree/9ec1f1e8e3748b406e555062bf11f2d069bbeb36/BMI%20Calculator%20-%20Web)**  
 
   A simple console application that calculates Body Mass Index based on user input.
 
-## **[Bank Transaction Analyzer](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Bank%20Transaction%20Analyzer%20-%20Console%20Java)**
+## **[Bank Transaction Analyzer - Console Java](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Bank%20Transaction%20Analyzer%20-%20Console%20Java)**
 
   A program designed to analyze bank transactions and provide insights.
 
@@ -51,15 +51,15 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   My first test project using JavaScript, involving basic DOM manipulation and interactivity.
 
-## [**Food Panda YouTube Ad-Blocker**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Food%20Panda%20YouTube%20ad-blocker%20-%20Extension)  
+## [**Food Panda YouTube ad-blocker - Extension**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Food%20Panda%20YouTube%20ad-blocker%20-%20Extension)  
 
   A script that blocks ads of Food Panda while watching YouTube videos.
 
-## [**Google Logo - HTML, CSS**](https://github.com/ridika-2004/my-development-tools/tree/d03fb172db8b226402e29e190264e6bb54afbb30/Google%20Logo%20-%20Web)
+## [**Google Logo - Web**](https://github.com/ridika-2004/my-development-tools/tree/d03fb172db8b226402e29e190264e6bb54afbb30/Google%20Logo%20-%20Web)
 
   A Big 'G' logo made with html and css.
 
-## [**Ice Cream Shop Console**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Ice-Cream%20Shop%20-%20Console%20Java)
+## [**Ice-Cream Shop - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Ice-Cream%20Shop%20-%20Console%20Java)
 
   A simple console application for managing sales and orders in an ice cream shop.
 
@@ -67,54 +67,78 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   This is a small project to test JavaScript functionality in VS Code.
 
-## [**Library Management System**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Library%20Management%20System%20-%20Console%20Java)
+## [**Library Management System - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Library%20Management%20System%20-%20Console%20Java)
   
   A system to manage books in a library, including features to add, remove, and search books.
 
 ## **[Light Dark Mode - Web](https://github.com/ridika-2004/My-Development-Tools/tree/90e51044d5f9cb0613f62ee2ec153367725c25c6/Light%20Dark%20Mode%20-%20Web)**
 
-  This is a small project to learn JavaScript with toggling light/dark mode.  
+  This is a small project to learn JavaScript with toggling light/dark mode.
 
-## [**Login Page Console**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Login%20Page%20-%20Console%20Java)
+## **[Login Form - JavaSwing](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/Login%20Form%20-%20JavaSwing)**
+
+  A small javaswing project with mysql database.
+
+## [**Login Page - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Login%20Page%20-%20Console%20Java)
 
   A console-based login page with added features like authentication and forgot password functionality.
 
-## [**PONG Game**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/PONG%20Game%20-%20C%2B%2B)
+## **[Meme Generator - Web](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/Meme%20Generator%20-%20Web)**
+
+  A meme generator web development project for learning API with JavaScript.
+
+## **[Message Generator - Web](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/Message%20Generator%20-%20Web)**
+
+  A small message generator web development project.
+
+## [**PONG Game - C++**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/PONG%20Game%20-%20C%2B%2B)
 
   A Pong Game
 
-## [**Personal Portfolio Template**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Personal%20Portfolio%20Template%20-%20Web)
+## [**Personal Portfolio Template - Web**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Personal%20Portfolio%20Template%20-%20Web)
 
   A template for a personal portfolio website to showcase projects and skills.
 
-## [**Product Inventory Management**  ](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Product%20Inventory%20Management%20-%20Console%20Java)
+## [**Product Inventory Management - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Product%20Inventory%20Management%20-%20Console%20Java)
 
   A system to manage product inventory, including adding, removing, and updating items.
 
-## [**Ride Fair Calculator Console**  ](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Ride%20Fair%20Calculator%20-%20Console%20Java)
+## **[QuizWiz - JavaSwing](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/QuizWiz%20-%20JavaSwing)**
+
+  A quiz application with java and mysql database.
+
+## **[Random Number Generator - Web](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/Random%20Number%20Generator%20-%20Web)**
+
+ A random number geenrator for javascript learning.
+
+## [**Ride Fair Calculator - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/Ride%20Fair%20Calculator%20-%20Console%20Java)
 
   A simple calculator to determine fair pricing for ride services.
 
-## [**Shape Ordered Printer**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Shape%20Ordered%20Printer%20-%20Console%20Java)
+## [**Shape Ordered Printer - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Shape%20Ordered%20Printer%20-%20Console%20Java)
 
   A program that prints shapes in a specified order based on user input.
 
-## [**TextToSpeechGui**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Text%20To%20Speech%20GUI%20-%20JavaFX)
+## **[Student Grading System - Console Java](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/Student%20Grading%20System%20-%20Console%20Java)**
+
+  This is a Java-based application for managing grades of students across multiple courses.
+
+## [**Text To Speech GUI - JavaFX**](https://github.com/ridika-2004/my-development-tools/tree/3042158d1701040dc708050424b5e3d653578d20/Text%20To%20Speech%20GUI%20-%20JavaFX)
 
   A graphical user interface for text-to-speech functionality, built with JavaFX.
 
-## [**User Management System**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/User%20Management%20System%20-%20Console%20Java)
+## [**To Do List-Web**](https://github.com/ridika-2004/my-development-tools/tree/0c9c09017f5418878e901dfadf10eb33b9b25ae5/To%20Do%20List%20-%20Web)
+
+  A to-do list small web development project
+
+## [**User Management System - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/User%20Management%20System%20-%20Console%20Java)
 
   A user management system with the ability to register, login, and manage user data.
 
-## [**XOR Encryption-Decryption**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/XOR%20Encryption%20Decryption%20-%20Web)
+## [**XOR Encryption Decryption - Web**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/XOR%20Encryption%20Decryption%20-%20Web)
 
   A program for basic encryption and decryption using the XOR algorithm.
 
-
-## [**To Do List-Web**](https://github.com/ridika-2004/my-development-tools/tree/0c9c09017f5418878e901dfadf10eb33b9b25ae5/To%20Do%20List%20-%20Web)
-
-  A to-do-list site
 ## Technologies Used
 
 - Java
