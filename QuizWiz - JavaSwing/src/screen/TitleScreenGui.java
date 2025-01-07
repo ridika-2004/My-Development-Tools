@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TitleScreenGui extends JFrame {
+
+    private JComboBox categoriesMenu;
     public TitleScreenGui(){
         super("Title Screen");
         setSize(400,565);
@@ -31,5 +33,11 @@ public class TitleScreenGui extends JFrame {
         chooseCategoryLabel.setHorizontalAlignment(SwingConstants.CENTER);
         chooseCategoryLabel.setForeground(CommonConstants.dark_blue);
         add(chooseCategoryLabel);
+
+        String[] categories = new String[]{"Math", "Programming", "History"};
+        categoriesMenu = new JComboBox(categories);
+        categoriesMenu.setBounds(20,130,337,45);
+        categoriesMenu.setForeground(CommonConstants.dark_blue);
+        add(categoriesMenu);
     }
 }
