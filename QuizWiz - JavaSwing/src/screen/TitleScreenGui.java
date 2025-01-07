@@ -55,5 +55,21 @@ public class TitleScreenGui extends JFrame {
         numOfQuestionsTextField.setHorizontalAlignment(SwingConstants.CENTER);
         numOfQuestionsTextField.setForeground(CommonConstants.dark_blue);
         add(numOfQuestionsTextField);
+
+        JButton startButton = new JButton("Start");
+        startButton.setFont(new Font("Arial",Font.BOLD,16));
+        startButton.setBounds(65,290,262,45);
+        startButton.setBackground(CommonConstants.lightorange);
+        startButton.setForeground(CommonConstants.dark_blue);
+        add(startButton);
+
+        JButton exitButton = new JButton("Exit");
+        exitButton.setFont(new Font("Arial",Font.BOLD,16));
+        exitButton.setBounds(65,350,262,45);
+        exitButton.setBackground(CommonConstants.lightorange);
+        exitButton.setForeground(CommonConstants.dark_blue);
+        add(exitButton);
+
+        
     }
 }
