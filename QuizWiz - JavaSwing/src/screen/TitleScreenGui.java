@@ -1,5 +1,7 @@
 package screen;
 
+import constants.CommonConstants;
+
 import javax.swing.*;
 
 public class TitleScreenGui extends JFrame {
@@ -10,5 +12,6 @@ public class TitleScreenGui extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        getContentPane().setBackground(CommonConstants.offwhite);
     }
 }
