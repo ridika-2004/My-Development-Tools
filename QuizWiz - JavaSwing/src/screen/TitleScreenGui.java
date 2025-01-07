@@ -70,6 +70,11 @@ public class TitleScreenGui extends JFrame {
         exitButton.setForeground(CommonConstants.dark_blue);
         add(exitButton);
 
-        
+        JButton createAQuestionButton = new JButton("Create A Question");
+        createAQuestionButton.setFont(new Font("Arial",Font.BOLD,16));
+        createAQuestionButton.setBounds(65,410,262,45);
+        createAQuestionButton.setBackground(CommonConstants.lightorange);
+        createAQuestionButton.setForeground(CommonConstants.dark_blue);
+        add(createAQuestionButton);
     }
 }
