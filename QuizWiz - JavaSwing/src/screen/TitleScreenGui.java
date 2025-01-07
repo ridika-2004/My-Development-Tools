@@ -39,5 +39,12 @@ public class TitleScreenGui extends JFrame {
         categoriesMenu.setBounds(20,130,337,45);
         categoriesMenu.setForeground(CommonConstants.dark_blue);
         add(categoriesMenu);
+
+        JLabel numOfQuestions = new JLabel("Number of questions: ");
+        numOfQuestions.setFont(new Font("Arial",Font.BOLD,16));
+        numOfQuestions.setBounds(20,190,172,20);
+        numOfQuestions.setHorizontalAlignment(SwingConstants.CENTER);
+        numOfQuestions.setForeground(CommonConstants.dark_blue);
+        add(numOfQuestions);
     }
 }
