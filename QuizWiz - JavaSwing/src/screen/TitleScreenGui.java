@@ -24,5 +24,12 @@ public class TitleScreenGui extends JFrame {
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         titleLabel.setForeground(CommonConstants.dark_blue);
         add(titleLabel);
+
+        JLabel chooseCategoryLabel = new JLabel("Choose a Category");
+        chooseCategoryLabel.setFont(new Font("Arial",Font.BOLD,16));
+        chooseCategoryLabel.setBounds(0,90,400,43);
+        chooseCategoryLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        chooseCategoryLabel.setForeground(CommonConstants.dark_blue);
+        add(chooseCategoryLabel);
     }
 }
