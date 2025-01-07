@@ -8,6 +8,8 @@ import java.awt.*;
 public class TitleScreenGui extends JFrame {
 
     private JComboBox categoriesMenu;
+    private JTextField numOfQuestionsTextField;
+
     public TitleScreenGui(){
         super("Title Screen");
         setSize(400,565);
@@ -46,5 +48,12 @@ public class TitleScreenGui extends JFrame {
         numOfQuestions.setHorizontalAlignment(SwingConstants.CENTER);
         numOfQuestions.setForeground(CommonConstants.dark_blue);
         add(numOfQuestions);
+
+        numOfQuestionsTextField = new JTextField("10");
+        numOfQuestionsTextField.setFont(new Font("Arial",Font.BOLD,16));
+        numOfQuestionsTextField.setBounds(200,190,148,26);
+        numOfQuestionsTextField.setHorizontalAlignment(SwingConstants.CENTER);
+        numOfQuestionsTextField.setForeground(CommonConstants.dark_blue);
+        add(numOfQuestionsTextField);
     }
 }
