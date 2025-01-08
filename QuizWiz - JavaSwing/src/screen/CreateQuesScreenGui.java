@@ -21,9 +21,14 @@ public class CreateQuesScreenGui extends JFrame {
         JLabel titleLabel = new JLabel("Create Your Own Question");
         titleLabel.setFont(new Font("Arial",Font.BOLD,24));
         titleLabel.setBounds(50,15,310,29);
-        //titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         titleLabel.setForeground(CommonConstants.dark_blue);
         add(titleLabel);
+
+        JLabel questionLabel = new JLabel("Question: ");
+        questionLabel.setFont(new Font("Arial",Font.BOLD,16));
+        questionLabel.setBounds(50,60,93,20);
+        questionLabel.setForeground(CommonConstants.dark_blue);
+        add(questionLabel);
     }
 
 }
