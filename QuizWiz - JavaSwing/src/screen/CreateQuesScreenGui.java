@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CreateQuesScreenGui extends JFrame {
+    private JTextArea questionTextArea;
+
     public CreateQuesScreenGui(){
         super("Create a Question");
         setSize(851,565);
@@ -29,6 +31,12 @@ public class CreateQuesScreenGui extends JFrame {
         questionLabel.setBounds(50,60,93,20);
         questionLabel.setForeground(CommonConstants.dark_blue);
         add(questionLabel);
+
+        questionTextArea = new JTextArea();
+        questionTextArea.setFont(new Font("Arial",Font.BOLD,16));
+        questionTextArea.setBounds(50,90,310,110);
+        questionTextArea.setForeground(CommonConstants.dark_blue);
+        add(questionTextArea);
     }
 
 }
