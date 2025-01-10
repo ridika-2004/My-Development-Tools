@@ -64,10 +64,17 @@ public class CreateQuesScreenGui extends JFrame {
 
         JButton submitButton = new JButton("Submit");
         submitButton.setFont(new Font("Arial",Font.BOLD,16));
-        submitButton.setBounds(300,450,262,45);
+        submitButton.setBounds(300,440,262,45);
         submitButton.setForeground(CommonConstants.dark_blue);
-        submitButton.setBackground(CommonConstants.offwhite);
+        submitButton.setBackground(CommonConstants.white);
         add(submitButton);
+
+        JLabel goBackLabel = new JLabel("Go Back");
+        goBackLabel.setFont(new Font("Arial",Font.BOLD,16));
+        goBackLabel.setBounds(300,495,262,20);
+        goBackLabel.setForeground(CommonConstants.dark_blue);
+        goBackLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        add(goBackLabel);
     }
 
     private void addAnswerComponents()
@@ -76,7 +83,7 @@ public class CreateQuesScreenGui extends JFrame {
         for(int i=0;i<4;i++){
             JLabel answerLabel = new JLabel("Answer "+(i+1));
             answerLabel.setFont(new Font("Arial",Font.BOLD,16));
-            answerLabel.setBounds(470,60+(i*verticalSpacing),93,20);
+            answerLabel.setBounds(470,55+(i*verticalSpacing),93,20);
             answerLabel.setForeground(CommonConstants.dark_blue);
             add(answerLabel);
 
@@ -87,7 +94,7 @@ public class CreateQuesScreenGui extends JFrame {
             add(answerRadioButtons[i]);
 
             answerTextFields[i] = new JTextField();
-            answerTextFields[i].setBounds(470,90+(i*verticalSpacing),310,36);
+            answerTextFields[i].setBounds(470,85+(i*verticalSpacing),310,36);
             answerTextFields[i].setFont(new Font("Arial",Font.PLAIN,16));
             answerTextFields[i].setForeground(CommonConstants.dark_blue);
             add(answerTextFields[i]);
