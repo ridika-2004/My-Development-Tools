@@ -9,6 +9,7 @@ public class CreateQuesScreenGui extends JFrame {
     private JTextArea questionTextArea;
     private JTextField categoryTextField;
     private JRadioButton[] answerRadioButtons;
+    private ButtonGroup buttonGroup;
     private JTextField[] answerTextFields;
 
     public CreateQuesScreenGui(){
@@ -21,6 +22,7 @@ public class CreateQuesScreenGui extends JFrame {
         getContentPane().setBackground(CommonConstants.offwhite);
         answerRadioButtons = new JRadioButton[4];
         answerTextFields = new JTextField[4];
+        buttonGroup = new ButtonGroup();
 
         addGuiComponents();
     }
@@ -59,6 +61,13 @@ public class CreateQuesScreenGui extends JFrame {
         add(categoryTextField);
 
         addAnswerComponents();
+
+        JButton submitButton = new JButton("Submit");
+        submitButton.setFont(new Font("Arial",Font.BOLD,16));
+        submitButton.setBounds(300,450,262,45);
+        submitButton.setForeground(CommonConstants.dark_blue);
+        submitButton.setBackground(CommonConstants.offwhite);
+        add(submitButton);
     }
 
     private void addAnswerComponents()
@@ -74,6 +83,7 @@ public class CreateQuesScreenGui extends JFrame {
             answerRadioButtons[i] = new JRadioButton();
             answerRadioButtons[i].setBounds(440,100+(i*verticalSpacing),21,21);
             answerRadioButtons[i].setBackground(null);
+            buttonGroup.add(answerRadioButtons[i]);
             add(answerRadioButtons[i]);
 
             answerTextFields[i] = new JTextField();
