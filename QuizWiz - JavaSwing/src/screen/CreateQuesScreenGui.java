@@ -7,6 +7,7 @@ import java.awt.*;
 
 public class CreateQuesScreenGui extends JFrame {
     private JTextArea questionTextArea;
+    private JTextField categoryTextField;
 
     public CreateQuesScreenGui(){
         super("Create a Question");
@@ -45,6 +46,12 @@ public class CreateQuesScreenGui extends JFrame {
         categoryLabel.setBounds(50,250,93,20);
         categoryLabel.setForeground(CommonConstants.dark_blue);
         add(categoryLabel);
+
+        categoryTextField = new JTextField();
+        categoryTextField.setFont(new Font("Arial",Font.BOLD,16));
+        categoryTextField.setBounds(50,280,310,36);
+        categoryTextField.setForeground(CommonConstants.dark_blue);
+        add(categoryTextField);
     }
 
 }
