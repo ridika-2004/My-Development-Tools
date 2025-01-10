@@ -36,7 +36,15 @@ public class CreateQuesScreenGui extends JFrame {
         questionTextArea.setFont(new Font("Arial",Font.BOLD,16));
         questionTextArea.setBounds(50,90,310,110);
         questionTextArea.setForeground(CommonConstants.dark_blue);
+        questionTextArea.setLineWrap(true);
+        questionTextArea.setWrapStyleWord(true);
         add(questionTextArea);
+
+        JLabel categoryLabel = new JLabel("Category : ");
+        categoryLabel.setFont(new Font("Arial",Font.BOLD,16));
+        categoryLabel.setBounds(50,250,93,20);
+        categoryLabel.setForeground(CommonConstants.dark_blue);
+        add(categoryLabel);
     }
 
 }
