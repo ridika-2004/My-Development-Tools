@@ -8,6 +8,8 @@ import java.awt.*;
 public class CreateQuesScreenGui extends JFrame {
     private JTextArea questionTextArea;
     private JTextField categoryTextField;
+    private JRadioButton[] answerRadioButtons;
+    private JTextField[] answerTextFields;
 
     public CreateQuesScreenGui(){
         super("Create a Question");
@@ -17,6 +19,9 @@ public class CreateQuesScreenGui extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         getContentPane().setBackground(CommonConstants.offwhite);
+        answerRadioButtons = new JRadioButton[4];
+        answerTextFields = new JTextField[4];
+
         addGuiComponents();
     }
 
@@ -52,6 +57,31 @@ public class CreateQuesScreenGui extends JFrame {
         categoryTextField.setBounds(50,280,310,36);
         categoryTextField.setForeground(CommonConstants.dark_blue);
         add(categoryTextField);
+
+        addAnswerComponents();
+    }
+
+    private void addAnswerComponents()
+    {
+        int verticalSpacing = 100;
+        for(int i=0;i<4;i++){
+            JLabel answerLabel = new JLabel("Answer "+(i+1));
+            answerLabel.setFont(new Font("Arial",Font.BOLD,16));
+            answerLabel.setBounds(470,60+(i*verticalSpacing),93,20);
+            answerLabel.setForeground(CommonConstants.dark_blue);
+            add(answerLabel);
+
+            answerRadioButtons[i] = new JRadioButton();
+            answerRadioButtons[i].setBounds(440,100+(i*verticalSpacing),21,21);
+            answerRadioButtons[i].setBackground(null);
+            add(answerRadioButtons[i]);
+
+            answerTextFields[i] = new JTextField();
+            answerTextFields[i].setBounds(470,90+(i*verticalSpacing),310,36);
+            answerTextFields[i].setFont(new Font("Arial",Font.PLAIN,16));
+            answerTextFields[i].setForeground(CommonConstants.dark_blue);
+            add(answerTextFields[i]);
+        }
     }
 
 }
