@@ -131,6 +131,10 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   A to-do list small web development project
 
+## [**Unit Testing With Mockito - Java**](https://github.com/ridika-2004/My-Development-Tools/tree/2f9f733733dc01d9a9a4c7d6e1694994c634c3fa/Unit%20Testing%20With%20Mockito%20-%20Java)
+
+  A simple Java project demonstrating how to write unit tests using Mockito and JUnit 5.
+
 ## [**User Management System - Console Java**](https://github.com/ridika-2004/my-development-tools/tree/f4d86f75a9cc53c6bc1981288c1117372cd28edd/User%20Management%20System%20-%20Console%20Java)
 
   A user management system with the ability to register, login, and manage user data.
