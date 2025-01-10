@@ -2,11 +2,6 @@
   <h1>💻 My Development Tools</h1>
 </div>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d498e7ba-1809-4d27-925f-18d32ddf4832" width="300"/>
-</p>
-
-
 
 ---
 
@@ -20,6 +15,9 @@
 
 Welcome to my repository of **development tools and small projects**! This collection showcases my **programming skills**, **problem-solving abilities**, and experimentation with various **languages** and **technologies**. Below, you'll find a list of projects, along with a folder link of each.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d498e7ba-1809-4d27-925f-18d32ddf4832" width="300"/>
+</p>
 
 ## Projects List
 ---
