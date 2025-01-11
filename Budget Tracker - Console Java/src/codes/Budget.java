@@ -25,17 +25,34 @@ public class Budget {
         }
     }
 
-    public void viewTotalSpending(){
+    public void viewTotalSpending() {
         List<String> lines = BasicFileUtils.read(filename);
-        if(lines.size()==0){
-            System.out.println("No records yet");
+
+        if (lines.isEmpty()) {
+            System.out.println("No records yet.");
             return;
         }
-        for(String line : lines){
+
+        // Print table header
+        System.out.println("+----------------+----------------------+----------------+");
+        System.out.println("|    Category    | Expected Spending   | Your Spendings |");
+        System.out.println("+----------------+----------------------+----------------+");
+
+        // Iterate through the data and print each row
+        for (String line : lines) {
             String[] parts = BasicFileUtils.splitIntoParts(line);
-            System.out.println("Catagpry : "+parts[0]+" --- Expected spending limit : "+parts[1]+" --- Your spendings : "+parts[2]);
+            String category = parts[0];
+            String expectedLimit = parts[1];
+            String actualSpending = parts[2];
+
+            // Print row for each category
+            System.out.printf("| %-14s | %-20s | %-14s |\n", category, expectedLimit, actualSpending);
         }
+
+        // Print table footer
+        System.out.println("+----------------+----------------------+----------------+");
     }
+
 
     public void updateSpending() {
         String category = BasicUtils.takeStringInput("Enter the category you spent on: ");
@@ -55,7 +72,6 @@ public class Budget {
                     int currentSpending = Integer.parseInt(parts[2]);
                     int updatedSpending = currentSpending + spending;
 
-                    // Update the line
                     lines.set(i, parts[0] + "," + parts[1] + "," + updatedSpending);
                     found = true;
                     break;
@@ -67,7 +83,6 @@ public class Budget {
                 return;
             }
 
-            // Rewrite the file with updated lines
             AdvancedFileUtils.clearFile(filename);
             for (String line : lines) {
                 BasicFileUtils.write(filename, line);
@@ -79,5 +94,42 @@ public class Budget {
             System.out.println("Invalid amount entered. Please enter a valid number.");
         }
     }
+
+    public void consolePieChart() {
+        List<String> lines = BasicFileUtils.read(filename);
+
+        if (lines.isEmpty()) {
+            System.out.println("No records to display.");
+            return;
+        }
+
+        int totalSpending = 0;
+        int[] spendingValues = new int[lines.size()];
+        String[] categories = new String[lines.size()];
+
+        // Calculate total spending and collect data
+        for (int i = 0; i < lines.size(); i++) {
+            String[] parts = BasicFileUtils.splitIntoParts(lines.get(i));
+            categories[i] = parts[0]; // Category name
+            spendingValues[i] = Integer.parseInt(parts[2]); // Actual spending
+            totalSpending += spendingValues[i];
+        }
+
+        // Display pie chart
+        System.out.println("\nExpense Chart (Spending Breakdown):");
+        for (int i = 0; i < categories.length; i++) {
+            int percentage = (int) ((spendingValues[i] / (double) totalSpending) * 100);
+            System.out.printf("%-10s: %3d%% ", categories[i], percentage);
+
+            // Create visual bar for pie chart
+            for (int j = 0; j < percentage / 2; j++) {
+                System.out.print("█");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\nNote: Each '█' represents 2% of the total spending.");
+    }
+
 
 }
