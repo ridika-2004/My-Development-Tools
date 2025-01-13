@@ -16,11 +16,12 @@ public class JDBC {
             }
 
             Question questionObj = insertQustion(categoryObj,question);
-            insertAnswers(questionObj, answer, correctIndex);
+            return insertAnswers(questionObj, answer, correctIndex);
 
         } catch (Exception e){
             e.printStackTrace();
         }
+        return false;
     }
 
     private static Question insertQustion(Category category, String questionText){
