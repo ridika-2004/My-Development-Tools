@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Languages-Java%20%7C%20C%2B%2B-blue" alt="Languages">  
   <img src="https://img.shields.io/badge/Projects-30%2B-brightgreen" alt="Projects">  
   <img src="https://img.shields.io/badge/Status-Active-success" alt="Status">  
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-%23ff69b4" alt="Open Source">  
+  <img src="https://img.shields.io/github/license/ridika-2004/Competitive-Programming?style=flat-square" alt="License">
 </p>
 
 
