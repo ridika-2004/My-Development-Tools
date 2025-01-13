@@ -1,22 +1,22 @@
 package database;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class JDBC {
     private static final String dburl = "jdbc:mysql://127.0.0.1/quizwiz";
     private static final String dbusername = "root";
     private static final String dbpass = "Ridnin990";
 
-    private static boolean insertQuesToDB(String question, String category, String[] answer, int correctIndex){
+    private static boolean saveQuesAndAnsToCategory(String question, String category, String[] answer, int correctIndex){
         try {
             Connection connection = DriverManager.getConnection(dburl,dbusername,dbpass);
             Category categoryObj = getCategory(category);
             if(categoryObj==null){
                 categoryObj = insertCategory(category);
             }
+
+            Question questionObj = insertQustion(categoryObj,question);
+            
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -41,13 +41,13 @@ public class JDBC {
     private static Category insertCategory(String category){
         try{
             Connection connection = DriverManager.getConnection(dburl,dbusername,dbpass);
-            PreparedStatement getCategoryQuery = connection.prepareStatement("select * from category where categorycol = ?");
-            getCategoryQuery.setString(1,category);
-            ResultSet resultSet = getCategoryQuery.executeQuery();
-
+            PreparedStatement insertCategoryQuery = connection.prepareStatement("insert into category (categorycol) values(?)", Statement.RETURN_GENERATED_KEYS);
+            insertCategoryQuery.setString(1,category);
+            insertCategoryQuery.executeUpdate();
+            ResultSet resultSet = insertCategoryQuery.getGeneratedKeys();
             if(resultSet.next()){
-                int categoryId = resultSet.getInt("categoryid");
-                return new Category(categoryId,category);
+                int categoryid = resultSet.getInt(1);
+                return new Category(categoryid,category);
             }
         } catch (Exception e){
             e.printStackTrace();
