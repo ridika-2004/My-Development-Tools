@@ -16,10 +16,29 @@ public class JDBC {
             }
 
             Question questionObj = insertQustion(categoryObj,question);
-            
+
         } catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    private static Question insertQustion(Category category, String questionText){
+        try{
+            Connection connection = DriverManager.getConnection(dburl,dbusername,dbpass);
+            PreparedStatement insertQuestionQuery = connection.prepareStatement("insert into question (categoryid, questiontext) values(?,?)", Statement.RETURN_GENERATED_KEYS);
+            insertQuestionQuery.setInt(1,category.getCategoryId());
+            insertQuestionQuery.setString(2,questionText);
+            insertQuestionQuery.executeUpdate();
+
+            ResultSet resultSet = insertQuestionQuery.getGeneratedKeys();
+            if(resultSet.next()){
+                int questionid = resultSet.getInt(1);
+                return new Question(questionid, category.getCategoryId(), questionText);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private static Category getCategory(String category){
