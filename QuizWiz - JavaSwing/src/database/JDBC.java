@@ -16,6 +16,7 @@ public class JDBC {
             }
 
             Question questionObj = insertQustion(categoryObj,question);
+            insertAnswers(questionObj, answer, correctIndex);
 
         } catch (Exception e){
             e.printStackTrace();
@@ -40,7 +41,6 @@ public class JDBC {
         }
         return null;
     }
-
     private static Category getCategory(String category){
         try{
             Connection connection = DriverManager.getConnection(dburl,dbusername,dbpass);
@@ -72,5 +72,27 @@ public class JDBC {
             e.printStackTrace();
         }
         return null;
+    }
+    private static boolean insertAnswers(Question question, String[] answers, int correctIndex){
+        try{
+            Connection connection = DriverManager.getConnection(dburl,dbusername,dbpass);
+            PreparedStatement insertAnswerQuery = connection.prepareStatement("insert into answer (questionid, answertext, iscorrect) values(?,?,?)");
+            insertAnswerQuery.setInt(1,question.getQuestionId());
+            for(int i=0;i<answers.length;i++){
+                insertAnswerQuery.setString(2, answers[i]);
+                if(i==correctIndex){
+                    insertAnswerQuery.setBoolean(3, true);
+                } else {
+                    insertAnswerQuery.setBoolean(3,false);
+                }
+
+                insertAnswerQuery.executeUpdate();
+            }
+            return true;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
+
     }
 }
