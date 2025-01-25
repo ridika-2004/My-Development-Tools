@@ -61,3 +61,32 @@ print(b.upper())
 print(b.strip())
 print(b.replace("H", "J"))
 print(b.split(","))
+
+txt = f"Hello, {v:.2f}"
+print(txt)
+
+line = "we are the \"vikings\" from the north."
+print(line)
+
+print(bool(0))
+
+if function:
+    print("Yes")
+
+print(isinstance(line, int))
+print(isinstance(v, int))
+
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+thislist.insert(1, "mango")
+print(thislist)
+
+anotherlist = ["kiwi", "grapes"]
+thislist.extend(anotherlist)
+print(thislist)
+thislist.remove("banana")
+print(thislist)
+thislist.pop(1)
+print(thislist)
+thislist.pop()
+print(thislist)
