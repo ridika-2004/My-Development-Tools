@@ -106,9 +106,6 @@ Welcome to my repository of **development tools and small projects**! This colle
 
   A system to manage product inventory, including adding, removing, and updating items.
 
-## **[QuizWiz - JavaSwing](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/QuizWiz%20-%20JavaSwing)**
-
-  A quiz application with java and mysql database.
 
 ## **[Random Number Generator - Web](https://github.com/ridika-2004/My-Development-Tools/tree/0088e5e6e9a95f6d4a8d5651d125b5c4ddb9259a/Random%20Number%20Generator%20-%20Web)**
 
