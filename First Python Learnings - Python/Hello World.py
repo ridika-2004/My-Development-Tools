@@ -90,3 +90,39 @@ thislist.pop(1)
 print(thislist)
 thislist.pop()
 print(thislist)
+for x in thislist:
+    print(x)
+for i in range(len(thislist)):
+    print(thislist[i])
+i=0;
+while i<len(thislist):
+    print(thislist[i])
+    i += 1 #python doesn't support i++
+newlist = []
+for x in thislist:
+    if "c" in x:
+        newlist.append(x)
+
+print(newlist)
+thislist.sort()
+print(thislist)
+thislist.reverse()
+print(thislist)
+
+numberlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def myfunc(x):
+    return abs(x-5)
+
+numberlist.sort(key=myfunc)
+print(numberlist)
+
+anothernumberlist = numberlist.copy()
+anothernumberlist = list(numberlist)
+anothernumberlist = numberlist[:]
+
+print(anothernumberlist)
+
+biglist = anothernumberlist + thislist
+thislist.extend(anothernumberlist)
+print(thislist)
+print(biglist)
