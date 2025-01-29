@@ -13,7 +13,7 @@ def backspace():
     entry.delete((len(entry.get())-1), END)
 
 window = Tk() # creates a blank window
-window.title("My First GUI Program in python") # sets the title of the window
+window.title("Enter your name") # sets the title of the window
 
 entry = Entry(window,
               font=("Arial", 24),
@@ -34,7 +34,5 @@ backspacebutton = Button(window,
                       text="Backspace",
                       command=backspace)
 backspacebutton.pack(side="right")
-
-icon = PhotoImage(file="shiba.png") # creates a photo image object
 
 window.mainloop() # places the window on the screen
