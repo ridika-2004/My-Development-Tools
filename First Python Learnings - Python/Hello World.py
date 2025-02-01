@@ -126,3 +126,31 @@ biglist = anothernumberlist + thislist
 thislist.extend(anothernumberlist)
 print(thislist)
 print(biglist)
+
+biglist.pop(1)
+print(biglist)
+biglist.pop()
+print(biglist)
+
+del biglist[0]
+print(biglist)
+
+biglist.clear()
+print(biglist)
+del biglist
+# print(biglist) will give error
+
+for x in thislist:
+    print(x)
+
+for x in range(len(thislist)):
+    print(thislist[x])
+
+mytuple = ("toji","sukuna","nanami","gojo","choso","itadori","megumi")
+print(mytuple)
+print(mytuple[2:5])
+
+anothertuple = ("nobara","maki","mai")
+mixedtuple = list(mytuple)+(list(anothertuple))
+print(tuple(mixedtuple))
+
