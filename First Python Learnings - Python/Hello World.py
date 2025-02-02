@@ -36,6 +36,18 @@ def function():
 
 function()
 
+# if argument number is unknown
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+def myfunc():
+    pass
+
+# gives no error even if empty
+
 v = random.randrange(1,20)
 print(v)
 
@@ -292,6 +304,30 @@ print(favchar)
 for x in favchar:
     print(x)
 
+for x in favchar.keys():
+    print(x)
+
+# prints keys
+
+for x in favchar:
+    print(favchar[x])
+
+for x in favchar.values():
+    print(x)
+
+# prints values
+
+for x,y in favchar.items():
+    print(x,y)
+
+# prints both
+
+anotherdict = favchar.copy()
+
+# there are other ways
+
+anotherdict = dict(favchar)
+
 favchar.pop("color")
 
 # to remove last item
@@ -301,4 +337,28 @@ print(favchar)
 
 favchar.clear()
 del favchar
+
+bleach = {
+    "ichigo" : {
+        "full name" : "kurosaki ichigo",
+        "zanpakuto" : "zangetsu",
+        "bankai" : "tensa zangetsu"
+    },
+    "rukia" : {
+        "full name" : "kuchiki rukia",
+        "zanpakuto" : "Sode no Shirayuki",
+        "bankai" : "Hakka no Togame" 
+    },
+    "aizen" : {
+        "full name" : "aizen sosuke",
+        "zanpakuto" : "kyoka suigetsu",
+        "bankai" : "null"
+    }
+}
+
+print(bleach)
+
+print(bleach["ichigo"]["zanpakuto"])
+
+
 
