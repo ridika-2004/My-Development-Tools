@@ -154,3 +154,114 @@ anothertuple = ("nobara","maki","mai")
 mixedtuple = list(mytuple)+(list(anothertuple))
 print(tuple(mixedtuple))
 
+(a,b,c) = anothertuple
+print(a)
+
+(u,v,w,x,y,*z) =mixedtuple
+print(z)
+
+# we can iterate through tuple like lists
+
+tuple_1 = mytuple+anothertuple
+tuple_2 = anothertuple*2;
+print(tuple_1)
+print(tuple_2)
+
+myset = {"madara","obito","itachi","sasuke","itachi"}
+print(myset)
+
+# duplicates not allowed in set
+
+# true and 1 is considered to be same in set, similar to false and 0
+
+anotherset = set(("luffy","nami","zoro","robin","sanji","ussop","chopper","jinbei","franky"))
+print(anotherset)
+
+myset.add("sarada")
+print(myset)
+
+# can add one item in add() function.
+
+myset.update(anotherset)
+print(myset)
+
+# can update any iterable type within update()
+
+myset.remove("sarada")
+print(myset)
+
+# if sarada doesn't exist it will create error
+
+myset.discard("sarada")
+print(myset)
+
+# does sme but not create error if sarada doesn't exist
+
+popped_value = myset.pop()
+print(myset)
+print(popped_value)
+
+# as set unordered, we don't know which item got removed
+
+anotherset.clear()
+print(anotherset)
+
+del anotherset
+# print(anotherset)
+
+# will create error
+
+# we can iterate through set by loops too
+
+set1 = {"a","b","c"}
+set2 = {1,2,3}
+set3 = set1.union(set2)
+print(set1)
+print(set2)
+print(set3)
+
+# there's a symbol for union
+
+set3 = set1 | set2
+print(set3)
+
+set4 = {"ichi","ni","san"}
+set3 = set1.union(set2,set4)
+print(set3)
+
+# we can add multiple sets with | too
+
+set3 = set1 | set2 | set4
+print(set3)
+
+# but with union() we can join set with another type of iteraive types. but they'll be converted in set
+
+set3 = set1.intersection(set2)
+print(set3)
+
+set2.add("ichi")
+set3 = set2 & set4
+print(set3)
+
+set3 = set2.difference(set4)
+print(set3)
+
+set3 = set2 - set4
+print(set3)
+
+# same result
+
+set3 = set2.difference_update(set4)
+print(set3)
+
+set3 = set1.symmetric_difference(set2)
+print(set3)
+
+# we can use ^ too for symmetric_difference
+
+set3 = set1^set2
+print(set3)
+
+set3 = set2.symmetric_difference_update(set4)
+print(set3)
+
