@@ -265,3 +265,40 @@ print(set3)
 set3 = set2.symmetric_difference_update(set4)
 print(set3)
 
+favchar = {
+    "name" : "one piece",
+    "favchar" : "robin",
+    "gender" : "female",
+    "is pretty" : "rial"
+}
+print(favchar)
+print(favchar["favchar"])
+print(favchar.get("favchar"))
+
+# dictionary is sued for key-value pair
+
+favchar["color"] = ["blue","pink","black","white"]
+
+print(favchar.keys())
+print(favchar.values())
+print(favchar.items())
+
+favchar["color"] = "blue"
+# changed item
+
+favchar.update({"eyes" : "dark"})
+print(favchar)
+
+for x in favchar:
+    print(x)
+
+favchar.pop("color")
+
+# to remove last item
+
+favchar.popitem()
+print(favchar)
+
+favchar.clear()
+del favchar
+
