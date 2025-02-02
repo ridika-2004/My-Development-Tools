@@ -10,4 +10,8 @@ icon = PhotoImage(file="shiba.png") # creates a photo image object
 window.iconphoto(True, icon) # sets the icon of the window
 window.config(bg="#ffffdd") # sets the background color of the window
 
+# Create a headline label
+headline_label = Label(window, text="Welcome to My GUI!", font=("Arial", 24), bg="#ffffdd", fg="#000000")
+headline_label.pack(pady=10)
+
 window.mainloop() # places the window on the screen
