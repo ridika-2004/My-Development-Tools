@@ -3,7 +3,8 @@ from tkinter import filedialog
 
 def openfile():
     filepath = filedialog.askopenfilename()
-    file = open(filepath,'r',encoding="utf-8")
+    file = open(filepath,'r',
+                encoding="utf-8") # for opening files with emoji
     print(file.read())
     file.close()
 

@@ -32,7 +32,7 @@ window.bind("<Left>",moveleft)
 window.bind("<Right>",moveright)
 
 car_image = Image.open("car.png")
-car_image = car_image.resize((112, 67))
+car_image = car_image.resize((146, 62))
 car = ImageTk.PhotoImage(car_image)
 myimage = canvas.create_image(10,10,image=car,anchor=NW)
 
