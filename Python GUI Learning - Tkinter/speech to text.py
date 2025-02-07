@@ -22,14 +22,16 @@ def speak():
             words = recognizer.recognize_google(audio)
             # label.config(text=words)
             window.update_idletasks()
-            text.insert(END, words)
+            text.insert(END, words+" ")
             label.config(text="")
         except sr.UnknownValueError:
             label.config(text="Google API could not understand the audio.")
             window.update_idletasks()
+            label.config(text="")
         except sr.RequestError as e:
             label.config(text=f"Could not request results from Google API; {e}")
             window.update_idletasks()
+            label.config(text="")
 
 # GUI Setup
 window = Tk()
