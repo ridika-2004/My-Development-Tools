@@ -45,7 +45,3 @@ This will execute the tests in ZombieListTest.java, where we mock the GoogleZomb
 - **Stubbing Methods:** The `findBodies` method is stubbed to return a predefined list of bio-organisms.
 - **JUnit Assertions:** The test verifies that the `ZombieList` correctly filters bio-organisms based on the given criteria.
 - **Mock Verification:** We also verify that the `findBodies` method was called once during the test.
-
-## License
-
-This project is free to use.
