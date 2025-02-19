@@ -1,0 +1,10 @@
+Yogurt Shop Invoice
+Cookies and Cream - 3 scoop: $8.40
+Chocolate Fudge - 1 scoop: $3.00
+Pistachio Delight - 2 scoop: $6.50
+Sprinkles - 3 time: $0.90
+Mixed chopped nuts - 1 time: $0.75
+Crushed Gingerbread - 2 time: $1.50
+Subtotal: $26.05
+Tax: $2.08
+Total Amount Due: $28.13
