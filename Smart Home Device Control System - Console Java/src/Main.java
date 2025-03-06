@@ -2,39 +2,33 @@ public class Main {
     public static void main(String[] args) {
         DeviceManager manager = new DeviceManager();
 
-        PoweredDevice light = new Light("Living Room");
-        PoweredDevice ac = new AirConditioner("Bedroom");
-        SecurityDevice alarm = new SecurityAlarm("Main Door");
-        SecurityDevice camera = new SecurityCamera("Backyard");
-        SensoryDevice smokeDetector = new SmokeDetector("Kitchen");
-        SensoryDevice humiditySensor = new HumiditySensor("Bathroom");
-
-        manager.addDevice(light);
-        manager.addDevice(ac);
-        manager.addDevice(alarm);
-        manager.addDevice(camera);
-        manager.addDevice(smokeDetector);
-        manager.addDevice(humiditySensor);
-
+        SmartDevice airConditioner = new AirConditioner("Living Room");
+        airConditioner.turnOn();
+        airConditioner.adjustSettings();
+        SmartDevice light = new Light("Living Room");
         light.turnOn();
-        ac.turnOn();
-        alarm.turnOff();
-        camera.turnOn();
-        smokeDetector.turnOff();
-        humiditySensor.turnOn();
-
         light.adjustSettings();
-        ac.adjustSettings();
-        alarm.adjustSettings();
-        camera.adjustSettings();
-        smokeDetector.adjustSettings();
+
+        SmartDevice humiditySensor = new HumiditySensor("Kitchen", "%");
         humiditySensor.adjustSettings();
+        humiditySensor.turnOff();
+        SmartDevice smokeDetector = new SmokeDetector("Kitchen");
+        smokeDetector.turnOn();
+        smokeDetector.adjustSettings();
 
-        alarm.notifyUser();
-        camera.notifyUser();
-        smokeDetector.notifyUser();
-        humiditySensor.notifyUser();
+        SmartDevice securityAlarm = new SecurityAlarm("Doorway", "123");
+        securityAlarm.adjustSettings();
+        SmartDevice securityCamera = new SecurityCamera("Doorway");
+        securityCamera.turnOn();
 
-        manager.removeDevice(ac);
+        manager.addDevice(airConditioner);
+        manager.addDevice(light);
+        manager.addDevice(humiditySensor);
+        manager.addDevice(smokeDetector);
+        manager.addDevice(securityAlarm);
+        manager.addDevice(securityCamera);
+
+        manager.removeDevice(airConditioner);
+
     }
 }

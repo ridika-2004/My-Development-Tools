@@ -3,6 +3,12 @@ public class SecurityCamera extends SecurityDevice {
 
     public SecurityCamera(String location) {
         super(location);
+        this.autoSaveEnabled = false;
+    }
+
+    public void setAutoSaveEnabled(boolean enabled) {
+        this.autoSaveEnabled = enabled;
+        System.out.println("Auto-save " + (enabled ? "enabled" : "disabled"));
     }
 
     @Override

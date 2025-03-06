@@ -1,9 +1,14 @@
 public class HumiditySensor extends SensoryDevice {
     private String measurementUnit;
-    private boolean notificationEnabled;
 
-    public HumiditySensor(String location) {
+    public HumiditySensor(String location, String measurementUnit) {
         super(location);
+        this.measurementUnit = measurementUnit;
+    }
+
+    public void setMeasurementUnit(String unit) {
+        this.measurementUnit = unit;
+        System.out.println("Humidity measurement unit set to: " + unit);
     }
 
     @Override
@@ -13,6 +18,8 @@ public class HumiditySensor extends SensoryDevice {
 
     @Override
     public void notifyUser() {
-        System.out.println("Humidity sensor sent you a notification");
+        if (notificationEnabled) {
+            System.out.println("This is a humidity sensor notification.");
+        }
     }
 }

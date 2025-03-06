@@ -1,9 +1,13 @@
 public class SmokeDetector extends SensoryDevice {
     private boolean sprinkleActivated;
-    private boolean notificationEnabled;
 
     public SmokeDetector(String location) {
         super(location);
+    }
+
+    public void toggleSprinkle(boolean activate) {
+        this.sprinkleActivated = activate;
+        System.out.println("Sprinkle system " + (activate ? "activated" : "deactivated"));
     }
 
     @Override
@@ -13,6 +17,8 @@ public class SmokeDetector extends SensoryDevice {
 
     @Override
     public void notifyUser() {
-        System.out.println("Smoke detector sent you a notification");
+        if (notificationEnabled) {
+            System.out.println("This is a smoke detector notification.");
+        }
     }
 }
