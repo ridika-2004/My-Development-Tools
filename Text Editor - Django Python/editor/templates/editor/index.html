@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+        .tool-button {
+            padding: 5px 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+        }
+        .tool-button:hover {
+            background-color: #e9e9e9;
+        }
+        .tool-button.active {
+            background-color: #ddd;
+        }
+        select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        #editor {
+            min-height: 500px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Editor</h1>
+    
+    <div class="toolbar">
+        <button id="bold-btn" class="tool-button" title="Bold (Ctrl+B)">B</button>
+        <button id="italic-btn" class="tool-button" title="Italic (Ctrl+I)">I</button>
+        
+        <select id="font-size">
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px" selected>16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+        </select>
+        
+        <select id="font-family">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="'Courier New', monospace">Courier New</option>
+            <option value="'Georgia', serif">Georgia</option>
+            <option value="'Verdana', sans-serif">Verdana</option>
+        </select>
+    </div>
+    
+    <div id="editor" contenteditable="true">
+        {{ document.content|safe }}
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editor = document.getElementById('editor');
+            const boldBtn = document.getElementById('bold-btn');
+            const italicBtn = document.getElementById('italic-btn');
+            const fontSizeSelect = document.getElementById('font-size');
+            const fontFamilySelect = document.getElementById('font-family');
+            
+            // Toggle bold
+            boldBtn.addEventListener('click', function() {
+                document.execCommand('bold', false, null);
+                boldBtn.classList.toggle('active');
+            });
+            
+            // Toggle italic
+            italicBtn.addEventListener('click', function() {
+                document.execCommand('italic', false, null);
+                italicBtn.classList.toggle('active');
+            });
+            
+            // Change font size
+            fontSizeSelect.addEventListener('change', function() {
+                document.execCommand('fontSize', false, '7'); // This is a hack for consistent sizing
+                const fontElements = document.getElementsByTagName('font');
+                for (let i = 0; i < fontElements.length; i++) {
+                    if (fontElements[i].size === '7') {
+                        fontElements[i].removeAttribute('size');
+                        fontElements[i].style.fontSize = this.value;
+                    }
+                }
+            });
+            
+            // Change font family
+            fontFamilySelect.addEventListener('change', function() {
+                document.execCommand('fontName', false, this.value);
+            });
+            
+            // Keyboard shortcuts
+            editor.addEventListener('keydown', function(e) {
+                if (e.ctrlKey || e.metaKey) {
+                    if (e.key === 'b') {
+                        e.preventDefault();
+                        boldBtn.click();
+                    } else if (e.key === 'i') {
+                        e.preventDefault();
+                        italicBtn.click();
+                    }
+                }
+            });
+            
+            // Check for existing formatting when selection changes
+            document.addEventListener('selectionchange', function() {
+                const selection = window.getSelection();
+                if (selection.rangeCount > 0) {
+                    const range = selection.getRangeAt(0);
+                    const parentElement = range.commonAncestorContainer.parentElement;
+                    
+                    // Check bold
+                    boldBtn.classList.toggle('active', 
+                        document.queryCommandState('bold') || 
+                        (parentElement && (parentElement.tagName === 'B' || parentElement.tagName === 'STRONG' || 
+                         parentElement.style.fontWeight === 'bold')));
+                    
+                    // Check italic
+                    italicBtn.classList.toggle('active', 
+                        document.queryCommandState('italic') || 
+                        (parentElement && (parentElement.tagName === 'I' || parentElement.tagName === 'EM' || 
+                         parentElement.style.fontStyle === 'italic')));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
