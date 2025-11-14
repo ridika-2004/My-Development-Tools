@@ -20,7 +20,7 @@ function App() {
       0.1,
       1000
     );
-    camera.position.set(0, 0, 5);
+    camera.position.z = 3;
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({
@@ -32,38 +32,30 @@ function App() {
     renderer.setClearColor(0x000000, 0);
 
     // Lights
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
-    // ============================
-    //         2D AXES
-    // ============================
+    const spotlight = new THREE.SpotLight(0xffffff, 1);
+    spotlight.position.set(5, 5, 5);
+    scene.add(spotlight);
 
-    // X axis (red)
-    const xPoints = [new THREE.Vector3(-5, 0, 0), new THREE.Vector3(5, 0, 0)];
-    const xGeometry = new THREE.BufferGeometry().setFromPoints(xPoints);
-    const xMaterial = new THREE.LineBasicMaterial({ color: 0xff0000 });
-    const xAxis = new THREE.Line(xGeometry, xMaterial);
-    scene.add(xAxis);
+    // ====== Multi-colored Cube ======
+    const faceMaterials = [
+      new THREE.MeshStandardMaterial({ color: 0xff0000 }), // +X
+      new THREE.MeshStandardMaterial({ color: 0x00ff00 }), // -X
+      new THREE.MeshStandardMaterial({ color: 0x0000ff }), // +Y
+      new THREE.MeshStandardMaterial({ color: 0xffff00 }), // -Y
+      new THREE.MeshStandardMaterial({ color: 0xff00ff }), // +Z
+      new THREE.MeshStandardMaterial({ color: 0x00ffff })  // -Z
+    ];
 
-    // Y axis (green)
-    const yPoints = [new THREE.Vector3(0, -5, 0), new THREE.Vector3(0, 5, 0)];
-    const yGeometry = new THREE.BufferGeometry().setFromPoints(yPoints);
-    const yMaterial = new THREE.LineBasicMaterial({ color: 0x00ff00 });
-    const yAxis = new THREE.Line(yGeometry, yMaterial);
-    scene.add(yAxis);
+    const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
+    const boxMesh = new THREE.Mesh(boxGeometry, faceMaterials);
+    scene.add(boxMesh);
+    // =================================
 
-    // Optional: plane grid (faint)
-    const grid = new THREE.GridHelper(10, 10, 0x444444, 0xdddddd);
-    grid.rotation.x = Math.PI / 2; // rotate into the X-Y plane
-    scene.add(grid);
-
-    // ============================
-
-    // Controls
     const controls = new OrbitControls(camera, renderer.domElement);
 
-    // Stats
     const stats = Stats();
     document.body.appendChild(stats.dom);
 
@@ -92,11 +84,8 @@ function App() {
       cancelAnimationFrame(frameId);
       window.removeEventListener('resize', handleResize);
       renderer.dispose();
-
-      xGeometry.dispose();
-      xMaterial.dispose();
-      yGeometry.dispose();
-      yMaterial.dispose();
+      boxGeometry.dispose();
+      faceMaterials.forEach(m => m.dispose());
     };
   }, []);
 
