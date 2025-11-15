@@ -1,0 +1,88 @@
+/* Fullscreen 3D canvas */
+#mythreejscanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Side control panel */
+.control-panel {
+  position: fixed;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  width: 260px;
+  padding: 22px;
+  border-radius: 18px;
+
+  background: rgba(20, 20, 30, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+  z-index: 20;
+}
+
+/* Title */
+.panel-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #9ecaff;
+}
+
+/* Inputs */
+.cool-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(180, 180, 255, 0.25);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
+.cool-input:focus {
+  border-color: #4da3ff;
+  box-shadow: 0 0 8px rgba(80,150,255,0.5);
+}
+
+/* Buttons */
+.cool-btn {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  transition: 0.25s;
+}
+
+.cool-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(80,150,255,0.35);
+}
+
+/* Danger button */
+.danger-btn {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+.danger-btn:hover {
+  box-shadow: 0 6px 15px rgba(255,60,60,0.35);
+}
+
+/* Stats text */
+.panel-stats {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #cddaff;
+  text-align: center;
+}
